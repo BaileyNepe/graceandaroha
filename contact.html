@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Grace and Aroha Educare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="body">
+
+  <!-- Header -->
+  <header class="container-fluid navbar-static navbar-fixed-top">
+    <a href="home" class="logo-container">
+      <img class="logo" src="images/logo-trans.png" alt="logo">
+    </a>
+    <div class="ctc-btn lg-screen">
+      <button type="button" href="tel:021931845" class="cta-btn btn phn"><i class="fas fa-mobile icon"></i> 0800 555 555</button>
+      <button type="button" href="mailto:admin@graceandaroha.co.nz" class="cta-btn btn email"><i class="far fa-envelope"></i></button>
+    </div>
+    <nav class="navigation" role='navigation'>
+      <div id="menuToggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="home">
+            <li>Home</li>
+          </a>
+          <a href="our-story">
+            <li>Our Story</li>
+          </a>
+          <a href="services">
+            <li>Services</li>
+          </a>
+          <a href="teachers">
+            <li>Teachers</li>
+          </a>
+          <a href="parents">
+            <li>Parents</li>
+          </a>
+          <a href="expressions-of-interest">
+            <li>Expressions of Interest</li>
+          </a>
+          <a href="contact" target="_blank">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <nav class="lg-screen">
+      <ul class="nav__links nav-bar">
+        <li><a class="nav-item" href="home">Home</a></li>
+        <li><a class="nav-item" href="our-story">Our Story</a></li>
+        <li><a class="nav-item" href="services">Services</a></li>
+        <li> <a class="nav-item" href="teachers">Teachers</a></li>
+        <li><a class="nav-item" href="parents">Parents</a>
+          <ul class="dropdown">
+            <li><a href="expressions-of-interest">Expression of Interest</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-item" href="contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container-ctc">
+    <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h6 class="title">Let's get in touch</h6>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon-ct" alt="" />
+            <p class="middle">92 Cherry Drive, Hamilton 2001</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon-ct" alt="" />
+            <p class="middle">lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone.png" class="icon-ct" alt="" />
+            <p class="middle">123-456-789</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form id="contact-form" method="POST" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" id="name-input" />
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" id="email-input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" id="phone-input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" id="description-input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <button type="button" onClick="submitToAPI(event)" value="Send" class="btn-cp">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="navbar footer">
+      <div id="container" class="container">
+        <ul id="menu-footer-menu" class="nav">
+          <li class="nav-item"><a href="home">Home</a></li>
+          <li class="nav-item"><a href="our-story">Our Story</a></li>
+          <li class="nav-item"><a href="expressions-of-interest">Enrolment</a></li>
+          <li class="nav-item"><a href="contact">Contact</a></li>
+        </ul>
+        <a href="https://www.facebook.com/jayfowles.co.nz"><i class="fab nav-item fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="container">
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

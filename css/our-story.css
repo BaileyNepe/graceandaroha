@@ -1,0 +1,159 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background:  !important;
+}
+
+.btn-plus:hover,
+.btn-plus:focus {
+  color: pink;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-plus{
+    color: #c68a94;
+}
+
+
+section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    margin:30px;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin: 30px 20px 100px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #c68a94 !important;
+    font-family: 'casadona', 'hello-sarrah', Indie flower, cursive;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.section-title {
+  padding-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom:80px;
+}
+
+
+/* Our Centers */
+
+.carousel-text {
+  font-family: Montserrat;
+  style: bolder;
+  color: white;
+  font-family: Montserrat;
+  opacity: 150%;
+}
+
+.carousel-caption {
+  width: 400px;
+  background-color: rgba(0,0,0, 0.5);
+  left: 50%;
+transform: translateX(-50%);
+}
+
+.carousel-item {
+  max-height:600px;
+}
+
+.padding-top-bottom {
+  padding: 50px 0;
+}
+
+.img-cnt {
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-attachment: none;
+  background-size: cover;
+  margin:auto;
+}

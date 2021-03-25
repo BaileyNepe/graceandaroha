@@ -1,0 +1,60 @@
+
+body {
+  background-color: #f0ece3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #596e79;
+}
+
+.mainbox {
+  background-color: #f0ece3;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+  .err {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 8%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+}
+
+ .err2 {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+  }
+
+.msg {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
+a {
+  text-decoration: none;
+  color: #c3b49c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
