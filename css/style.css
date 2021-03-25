@@ -252,7 +252,7 @@ ul li ul li {
 .banner-slide__content {
   position: relative;
   z-index: 2;
-  margin-top: 240px;
+  top: 240px;
 }
 
 .title-heading {
@@ -581,6 +581,10 @@ em {
     display: none;
   }
 
+  .banner-slide {
+    background-attachment: scroll;
+  }
+
   #menuToggle {
     display: block;
     position: absolute;
@@ -787,7 +791,7 @@ em {
   }
 
   .banner-slide__content {
-    margin-top: 160px;
+    top: 120px;
   }
 
   .image-scale {
