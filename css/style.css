@@ -264,6 +264,7 @@ ul li ul li {
 
 .title-paragraph {
   font-weight: bold;
+    font-size: 14px;
   color: #edf0f1;
   margin: 5%;
 }
