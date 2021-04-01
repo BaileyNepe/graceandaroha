@@ -8,6 +8,8 @@
   src: url('casadona.ttf') format('truetype');
 }
 
+
+
 .body {
   margin: 0;
   padding: 0;
@@ -128,8 +130,8 @@ header {
 }
 
 .nav-item {
-  padding: 0 20px;
-  font-size: 1.2rem;
+  padding: 0 16px;
+  font-size: 1.1rem;
 }
 
 ul li ul {
@@ -226,6 +228,7 @@ ul li ul li {
   text-align: left;
   margin: auto;
   padding: 0;
+  margin-top: 0;
 }
 
 .banner-slide-subpages {
@@ -562,7 +565,7 @@ em {
 /* Screen Sizing */
 @media (max-width: 1180px) {
   .nav-item {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
