@@ -1,0 +1,9 @@
+Website designed using HTML, CSS, Bootstrap, JavaScript. 
+
+Includes:
+ - Responsive design
+ - Hamburger menu (css design and application)
+ - Carousel
+ - Contact form integrated with AWS API gateway and lamda function
+ - Image gallery
+ - CSS translated about us section on hover
