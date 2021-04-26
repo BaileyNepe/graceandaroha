@@ -1,14 +1,12 @@
 @font-face {
-  font-family: 'hello-sarrah';
-  src: url('hello-sarrah.ttf') format('truetype');
+  font-family: "hello-sarrah";
+  src: url("hello-sarrah.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'casadona';
-  src: url('casadona.ttf') format('truetype');
+  font-family: "casadona";
+  src: url("casadona.ttf") format("truetype");
 }
-
-
 
 .body {
   margin: 0;
@@ -18,7 +16,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
-li, a {
+li,
+a {
   font-weight: 400;
   font-size: 16px;
   color: white;
@@ -28,19 +27,19 @@ li, a {
 h1 {
   font-size: 80px;
   color: #c68a94;
-  font-family: 'casadona', 'hello-sarrah', Indie flower, cursive;
+  font-family: "casadona", "hello-sarrah", Indie flower, cursive;
 }
 
 h2 {
   font-size: 60px;
   color: #c68a94;
-  font-family: 'casadona', 'hello-sarrah', 'Indie flower', cursive;
+  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
 }
 
 h3 {
   font-size: 50px;
   color: #c68a94;
-  font-family: 'casadona', 'hello-sarrah', 'Indie flower', cursive;
+  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
 }
 
 #h3 {
@@ -50,7 +49,7 @@ h3 {
 h4 {
   font-size: 30px;
   color: #c68a94;
-  font-family: 'casadona', 'hello-sarrah', 'Indie flower', cursive;
+  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
 }
 
 h6 {
@@ -121,7 +120,7 @@ header {
 
 .nav__links li a {
   list-style: none;
-  transition: all 0s ease 0s
+  transition: all 0s ease 0s;
 }
 
 .nav__links li a:hover {
@@ -154,7 +153,7 @@ ul li ul {
   z-index: 5;
 }
 
-ul li:hover>ul,
+ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -180,7 +179,7 @@ ul li ul li {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background: #937B58;
+  background: #937b58;
   cursor: pointer;
   color: #edf0f1;
   padding: 9px 20px;
@@ -197,7 +196,7 @@ ul li ul li {
 }
 
 .cta-btn:hover {
-  background: #D8CDBD;
+  background: #d8cdbd;
   color: white;
 }
 
@@ -264,7 +263,7 @@ ul li ul li {
 
 .title-paragraph {
   font-weight: bold;
-    font-size: 14px;
+  font-size: 14px;
   color: #edf0f1;
   margin: 5%;
 }
@@ -278,7 +277,7 @@ ul li ul li {
 }
 
 .banner-btn:hover {
-  background-color: #Ebccd2;
+  background-color: #ebccd2;
   color: black;
 }
 
@@ -448,7 +447,7 @@ em {
 }
 
 .carousel-fixings:hover {
-  color: #Ebccd2;
+  color: #ebccd2;
 }
 
 /**************************** More information ************************************/
@@ -627,9 +626,7 @@ em {
     border-radius: 5px;
     z-index: 5;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
   #menuToggle span:first-child {
@@ -644,7 +641,7 @@ em {
    * Transform all the slices of hamburger
    * into a crossmark.
    */
-  #menuToggle input:checked~span {
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 0px);
     background: #edf0f1;
@@ -653,7 +650,7 @@ em {
   /*
    * But let's hide the middle one.
    */
-  #menuToggle input:checked~span:nth-last-child(3) {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
@@ -661,7 +658,7 @@ em {
   /*
    * Ohyeah and the last one should go the other direction
    */
-  #menuToggle input:checked~span:nth-last-child(2) {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(0px, 0px);
   }
@@ -684,9 +681,8 @@ em {
     /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-    transform:
-      opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   #menu li {
@@ -703,7 +699,7 @@ em {
   /*
    * And let's fade it in from the left
    */
-  #menuToggle input:checked~ul {
+  #menuToggle input:checked ~ ul {
     transform: none;
     opacity: 1;
   }
@@ -716,7 +712,7 @@ em {
   }
 }
 
-@media (max-width: 761px){
+@media (max-width: 761px) {
   .featurette-img {
     margin-top: 50px;
   }
@@ -775,7 +771,7 @@ em {
     max-width: 400px;
     width: 100%;
     min-width: 0px;
-    margin-right: 2%
+    margin-right: 2%;
   }
 
   .nav-item {
@@ -818,5 +814,4 @@ em {
   .featurette-img {
     height: 250px;
   }
-
 }
