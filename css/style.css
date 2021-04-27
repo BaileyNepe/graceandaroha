@@ -734,7 +734,6 @@ em {
 
   .fixed-top {
     position: relative;
-    overflow: hidden;
   }
 
   header {
@@ -743,8 +742,6 @@ em {
   }
 
   .logo {
-    all: initial;
-    all: unset;
     margin-top: 0px;
     margin-bottom: 0px;
     position: relative;
@@ -758,8 +755,6 @@ em {
   }
 
   .container-wide {
-    all: initial;
-    all: unset;
     max-width: 400px;
     width: 100%;
     min-width: 0px;
