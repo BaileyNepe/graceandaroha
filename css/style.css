@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "hello-sarrah";
-  src: url("hello-sarrah.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "casadona";
   src: url("casadona.ttf") format("truetype");
 }
@@ -27,19 +22,18 @@ a {
 h1 {
   font-size: 80px;
   color: #c68a94;
-  font-family: "casadona", "hello-sarrah", Indie flower, cursive;
+  font-family: "casadona", cursive, "Montserrat", sans-serif;
 }
-
 h2 {
   font-size: 60px;
   color: #c68a94;
-  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
+  font-family: "casadona", cursive, "Montserrat", sans-serif;
 }
 
 h3 {
   font-size: 50px;
   color: #c68a94;
-  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
+  font-family: "casadona", cursive, "Montserrat", sans-serif;
 }
 
 #h3 {
@@ -49,7 +43,7 @@ h3 {
 h4 {
   font-size: 30px;
   color: #c68a94;
-  font-family: "casadona", "hello-sarrah", "Indie flower", cursive;
+  font-family: "casadona", cursive, "Montserrat", sans-serif;
 }
 
 h6 {
@@ -92,7 +86,7 @@ header {
 }
 
 .logo {
-  max-height: 50px;
+  max-height: 70px;
   height: 100%;
   width: auto;
   cursor: pointer;
@@ -498,8 +492,6 @@ em {
 /* featurette - Services */
 .featurette-divider {
   margin: 50px 10%;
-
-  /* Space out the Bootstrap <hr> more */
 }
 
 .featurette {
@@ -538,10 +530,6 @@ em {
   object-fit: cover;
 }
 
-/* .img-str {
-  object-fit: cover;
-} */
-
 .background-color-change {
   background-color: #f0ece3;
 }
@@ -563,13 +551,8 @@ em {
 }
 
 /* Screen Sizing */
-@media (max-width: 1180px) {
-  .nav-item {
-    font-size: 14px;
-  }
-}
 
-@media (min-width: 1050px) {
+@media (min-width: 1300px) {
   .navigation {
     display: none;
   }
@@ -579,7 +562,7 @@ em {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1300px) {
   .lg-screen {
     display: none;
   }
@@ -749,15 +732,24 @@ em {
     margin-right: 5%;
   }
 
+  .fixed-top {
+    position: relative;
+    overflow: hidden;
+  }
+
+  header {
+    background-color: #c3b49c;
+    height: 100px;
+  }
+
   .logo {
     all: initial;
     all: unset;
     margin-top: 0px;
     margin-bottom: 0px;
     position: relative;
-    max-width: auto;
-    width: 200px;
-    height: auto;
+    width: 100%;
+    max-width: 300px;
   }
 
   .logo-container {
