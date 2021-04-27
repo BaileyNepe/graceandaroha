@@ -651,6 +651,7 @@ em {
    * at the top left of the screen
    */
   #menu {
+    overflow-x: hidden;
     position: absolute;
     width: 100vw;
     margin: -100px 0 0 -50px;
@@ -735,8 +736,6 @@ em {
   header {
     background-color: #c3b49c;
     height: 100px;
-    position: relative !important;
-    overflow-x: hidden;
   }
 
   .logo {
