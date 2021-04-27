@@ -738,6 +738,7 @@ em {
 
   header {
     background-color: #c3b49c;
+    position: fixed;
     height: 100px;
   }
 
