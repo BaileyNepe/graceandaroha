@@ -735,15 +735,16 @@ em {
     background-color: #c3b49c;
     height: 100px;
     position: relative !important;
+    overflow-x: hidden;
   }
 
-  /* .logo {
+  .logo {
     margin-top: 0px;
     margin-bottom: 0px;
     position: relative;
     width: 100%;
     max-width: 300px;
-  } */
+  }
 
   .logo-container {
     margin-top: 10px;
