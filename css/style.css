@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   background-color: white;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -702,6 +702,10 @@ em {
 }
 
 @media (max-width: 540px) {
+  .body {
+    box-sizing: border-box;
+  }
+
   h1 {
     font-size: 50px;
   }
@@ -732,10 +736,6 @@ em {
     margin-right: 5%;
   }
 
-  .fixed-top {
-    position: relative;
-  }
-
   header {
     background-color: #c3b49c;
     height: 100px;
@@ -756,17 +756,8 @@ em {
 
   .container-wide {
     max-width: 400px;
-    width: 100%;
-    min-width: 0px;
+    width: auto;
     margin-right: 2%;
-  }
-
-  .nav-item {
-    padding: 0 10px 0 0;
-  }
-
-  .nav-item a {
-    font-size: 12px;
   }
 
   .banner-slide {
