@@ -43,7 +43,7 @@ h3 {
 h4 {
   font-size: 30px;
   color: #c68a94;
-  font-family: "casadona", cursive, "Montserrat", sans-serif;
+  font-family: cursive, "Montserrat", sans-serif;
 }
 
 h6 {
@@ -394,7 +394,8 @@ ul li ul li {
   font-weight: bold;
   position: absolute;
   color: white;
-  /* text-shadow: 1px 1px #995f69; */
+  font-family: Montserrat;
+  font-size: 3rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

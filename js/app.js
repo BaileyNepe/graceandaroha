@@ -21,16 +21,14 @@ function submitToAPI(e) {
   e.preventDefault();
   //       var URL = "API Gateway";
 
-
   var name = document.getElementById("name-input").value;
   var phone = document.getElementById("phone-input").value;
   var email = document.getElementById("email-input").value;
   var desc = document.getElementById("description-input").value;
   if (name == "" || phone == "" || email == "" || desc == "") {
-    alert("Please Fill All Required Field");
+    alert("Please Fill All Required Fields");
     return false;
   }
-
 
   emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!emailRE.test(email)) {
@@ -41,25 +39,24 @@ function submitToAPI(e) {
     name: name,
     phone: phone,
     email: email,
-    desc: desc
+    desc: desc,
   };
 
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("POST", "https://pa5v2ep5pe.execute-api.ap-southeast-2.amazonaws.com/prod/contact");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
   xmlhttp.send(JSON.stringify(data));
-  xmlhttp.onreadystatechange = function() {
+  xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState === 4) {
       var response = JSON.parse(xmlhttp.responseText);
       if (xmlhttp.status === 200) {
-        console.log('successful');
+        console.log("successful");
         alert("Your message has been sent");
       } else {
-        console.log('failed');
+        console.log("failed");
       }
     }
-  }
+  };
 
-  document.getElementById('contact-form').reset();
-
+  document.getElementById("contact-form").reset();
 }
