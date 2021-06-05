@@ -21,3 +21,20 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+$(document).ready(function () {
+  if (window.innerWidth < 600) {
+    $("#header-nav").removeClass("fixed-top");
+  }
+});
+
+$(function () {
+  $(window).bind("resize", function () {
+    console.log($(this).width());
+    if ($(this).width() < 600) {
+      $("#header-nav").removeClass("fixed-top").addClass("test");
+    } else {
+      $("#header-nav").removeClass("test").addClass("fixed-top");
+    }
+  });
+});

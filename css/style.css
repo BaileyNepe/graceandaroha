@@ -28,7 +28,7 @@ a {
 h1 {
   font-size: 80px;
   color: #c68a94;
-  font-family: "casadona", cursive, "Montserrat", sans-serif;
+  font-family: "casadona", cursive;
 }
 h2 {
   font-size: 60px;
@@ -42,10 +42,6 @@ h3 {
   font-family: "casadona", cursive, "Montserrat", sans-serif;
 }
 
-#h3 {
-  font-size: 50px;
-}
-
 h4 {
   font-size: 30px;
   color: #c68a94;
@@ -54,7 +50,6 @@ h4 {
 
 h6 {
   font-size: 20px;
-  font-family: Montserrat;
   font-weight: bold;
   color: #596e79;
 }
@@ -598,11 +593,6 @@ em {
     font-size: 16px;
   }
 
-  header {
-    background-color: #c3b49c;
-    height: 100px;
-  }
-
   .container-wide {
     max-width: 400px;
     width: auto;
@@ -707,6 +697,12 @@ em {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .navbar-fixed-top {
+    background-color: #c3b49c;
   }
 }
 
