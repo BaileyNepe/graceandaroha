@@ -70,6 +70,10 @@ em {
   transition: background-color 100ms linear;
 }
 
+.navbar-static {
+  background-color: var(--main-hover);
+}
+
 .logo {
   margin: 1rem 1rem 0.5rem 3%;
   max-height: 4.4rem;
@@ -385,6 +389,14 @@ em {
   color: #d3d3d3;
 }
 
+.fixed-footer {
+  grid-area: footer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 /* featurette - Services */
 .featurette-divider {
   margin: 50px 10%;
@@ -575,6 +587,7 @@ em {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
   }
 
   .nav--link {
@@ -592,6 +605,7 @@ em {
   }
 
   .hamburger {
+    z-index: 2;
     background-color: transparent;
     position: absolute;
     top: 2.5rem;

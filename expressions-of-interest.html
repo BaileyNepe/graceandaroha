@@ -5,75 +5,50 @@
   <meta charset="utf-8">
   <title>Expressions of Interest | Grace & Aroha Educare</title>
   <meta name="viewport" content="width=device-width, initial scale=1.0">
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/contact.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <!-- Icons -->
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <script src="https://kit.fontawesome.com/99f64acb33.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
+
   <!-- Header -->
   <header class="container-fluid navbar-static navbar-fixed-top">
-    <a href="index" class="logo-container">
-      <img class="logo" src="images/logo-trans.png" alt="logo">
+    <a href="index">
+      <img class="logo" src="images/logo-trans.png" alt="Grace and Aroha Educare">
     </a>
     <div class="ctc-btn lg-screen">
-      <button type="button" href="tel:0273411848" class="cta-btn btn phn"><i class="fas fa-mobile icon"></i> 027 341 1848</button>
+      <button type="button" href="tel:0273411848" class="cta-btn btn phn"><i class="fas fa-mobile icon"></i>027 341 1848</button>
       <button type="button" href="mailto:admin@graceandaroha.co.nz" class="cta-btn btn email"><i class="far fa-envelope"></i></button>
     </div>
-    <nav class="navigation" role='navigation'>
-      <div id="menuToggle">
-        <input type="checkbox">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <a href="index">
-            <li>Home</li>
-          </a>
-          <a href="our-story">
-            <li>Our Story</li>
-          </a>
-          <a href="services">
-            <li>Additional Services</li>
-          </a>
-          <a href="work-with-us">
-            <li>Work with us</li>
-          </a>
-          <a href="find-childcare">
-            <li>Find Childcare</li>
-          </a>
-          <a href="expressions-of-interest">
-            <li>Expressions of Interest</li>
-          </a>
-          <a href="contact">
-            <li>Contact</li>
-          </a>
-        </ul>
+    <nav>
+      <ul class="nav__links nav--menu nav-bar">
+        <li class="nav--item"><a class="nav--link" href="/">Home</a></li>
+        <li class="nav--item"><a class="nav--link" href="our-story">Our Story</a></li>
+        <li class="nav--item"><a class="nav--link" href="services">Additional Services</a></li>
+        <li class="nav--item"><a class="nav--link" href="work-with-us">Work with us</a></li>
+        <li class="nav--item dropdown"><a class="nav--link" href="find-childcare">Find Childcare</a>
+          <div class="dropdown-content">
+            <a class="nav--link" href="expressions-of-interest">Expression of Interest</a>
+          </div>
+        </li>
+        <li class="nav--item mobile-show"><a class="nav--link" href="expressions-of-interest">Expression of Interest</a></li>
+        <li class="nav--item"><a class="nav--link" href="contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </nav>
-    <nav class="lg-screen">
-      <ul class="nav__links nav-bar">
-        <li><a class="nav-item" href="index">Home</a></li>
-        <li><a class="nav-item" href="our-story">Our Story</a></li>
-        <li><a class="nav-item" href="services">Additional Services</a></li>
-        <li> <a class="nav-item" href="work-with-us">Work with us</a></li>
-        <li><a class="nav-item" href="find-childcare">Find Childcare</a>
-          <ul class="dropdown">
-            <li><a href="expressions-of-interest">Expression of Interest</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-item" href="contact">Contact</a></li>
-      </ul>
-    </nav>
-    </div>
   </header>
 
 
@@ -91,31 +66,27 @@
 
   <!-- Footer -->
 
-  <footer>
-    <div class="navbar navbar-fixed-bottom footer">
-      <div id="container" class="container">
-        <ul id="menu-footer-menu" class="nav">
-          <li class="nav-item"><a href="index">Home</a></li>
-          <li class="nav-item"><a href="our-story">Our Story</a></li>
-          <li class="nav-item"><a href="expressions-of-interest">Enrolment</a></li>
-          <li class="nav-item"><a href="contact">Contact</a></li>
-        </ul>
-        <a href="https://www.facebook.com/jayfowles.co.nz"><i class="fab nav-item fa-facebook"></i></a>
-      </div>
+  <footer class="fixed-footer">
+    <div class="navbar footer">
+      <ul class="nav">
+        <li class="nav--item"><a href="index">Home</a></li>
+        <li class="nav--item"><a href="our-story">Our Story</a></li>
+        <li class="nav--item"><a href="expressions-of-interest">Enrolment</a></li>
+        <li class="nav--item"><a href="contact">Contact</a></li>
+      </ul>
+      <a href="https://www.facebook.com/jayfowles.co.nz"><i class="fab nav-item fa-facebook"></i></a>
     </div>
     <div class="container">
     </div>
   </footer>
 
-
-
-
   <!-- JavaScript Libary -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>
