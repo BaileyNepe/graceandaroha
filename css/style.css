@@ -1,3 +1,9 @@
+:root {
+  --main: #c3b49c;
+  --secondary: #596e79;
+  --main-hover: #d8cdbd;
+}
+
 @font-face {
   font-family: "casadona";
   src: url("casadona.ttf") format("truetype");
@@ -464,6 +470,7 @@ em {
 
 .nav-item a {
   font-size: 1rem;
+  padding-left: 1rem;
 }
 
 .nav-item a:hover {
