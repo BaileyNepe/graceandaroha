@@ -28,16 +28,17 @@
             <button type="button" href="mailto:admin@graceandaroha.co.nz" class="cta-btn btn email"><i class="far fa-envelope"></i></button>
         </div>
         <nav>
-            <ul class="nav__links nav--menu">
+            <ul class="nav__links nav--menu nav-bar">
                 <li class="nav--item"><a class="nav--link" href="/">Home</a></li>
                 <li class="nav--item"><a class="nav--link" href="our-story">Our Story</a></li>
                 <li class="nav--item"><a class="nav--link" href="services">Additional Services</a></li>
                 <li class="nav--item"><a class="nav--link" href="work-with-us">Work with us</a></li>
-                <li class="nav--item"><a class="nav--link" href="find-childcare">Find Childcare</a>
-                    <!-- <ul class="dropdown">
-                        <li class="nav--item"><a class="nav--link" href="expressions-of-interest">Expression of Interest</a></li>
-                    </ul> -->
+                <li class="nav--item dropdown"><a class="nav--link" href="find-childcare">Find Childcare</a>
+                    <div class="dropdown-content">
+                        <a class="nav--link" href="expressions-of-interest">Expression of Interest</a>
+                    </div>
                 </li>
+                <li class="nav--item mobile-show"><a class="nav--link" href="expressions-of-interest">Expression of Interest</a></li>
                 <li class="nav--item"><a class="nav--link" href="contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -47,24 +48,41 @@
             </div>
         </nav>
     </header>
+
+    <!-- title image -->
+    <section class="banner">
+        <div class="banner-slide" style="background-image: url( images/beach-walking.jpg );">
+            <div class="container-wide">
+                <div class="banner-slide__content">
+                    <h1 class="title-heading">Aroha mai, aroha atu</h1>
+                    <p class="title-paragraph">With Grace & Aroha, children and their families are cared for through loving, caring, respectful
+                        relationships, in order to feel happy, safe and to be able to grow and learn together.</p>
+                    <a href="contact" class="btn btn-secondary banner-btn">Get in touch</a>
+                </div>
+            </div>
+            <div class="banner__tint"></div>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav--menu");
+        const navLink = document.querySelectorAll(".nav--link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 </body>
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav--menu");
-    const navLink = document.querySelectorAll(".nav--link");
 
-    hamburger.addEventListener("click", mobileMenu);
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
-
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-</script>
 
 </html>

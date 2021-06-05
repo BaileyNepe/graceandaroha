@@ -58,17 +58,6 @@ p {
 }
 
 /*********************************** Header **********************************/
-header {
-  background-color: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2% 10px 2%;
-}
-
-#header {
-  padding-top: 0;
-}
 
 .navbar-fixed-top.scrolled {
   background-color: #c3b49c !important;
@@ -79,114 +68,40 @@ header {
   background-color: #c3b49c;
 }
 
-.logo-container {
-  margin-top: 25px;
-  margin-left: 6%;
-  margin-bottom: 20px;
-}
-
 .logo {
-  max-height: 70px;
+  margin: 1rem 1rem 0.5rem 3%;
+  max-height: 4.4rem;
   height: 100%;
-  width: auto;
   cursor: pointer;
-}
-
-.nav-bar {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  position: absolute;
-  right: 50px;
-  width: auto;
-  top: 60px;
-  margin-bottom: 0;
-}
-
-.nav__links {
-  list-style: none;
-}
-
-.nav__links li {
-  padding: 0;
-  position: relative;
-  float: left;
-}
-
-.nav__links li a {
-  list-style: none;
-  transition: all 0s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: #dfd3c3;
-  text-decoration: none;
-}
-
-.nav-item {
-  padding: 0 16px;
-  font-size: 1.1rem;
-}
-
-ul li ul {
-  width: 100px;
-  height: 60px;
-  padding: 5px;
-  background-color: #c3b49c;
-  visibility: hidden;
-  text-decoration: none;
-  list-style-type: none;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  text-align: center;
-  display: none;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  z-index: 5;
-}
-
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: auto;
 }
 
 .ctc-btn {
   position: absolute;
-  right: 65px;
-  top: 0px;
+  right: 4rem;
+  top: 0;
   margin-top: 0;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .cta-btn {
   float: right;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  background: #937b58;
+  background-color: #937b58;
   cursor: pointer;
   color: #edf0f1;
-  padding: 9px 20px;
-  text-decoration: none;
+  padding: 0.6rem 1.25rem;
   border-radius: 0;
 }
 
+.fa-envelope {
+  background-color: transparent;
+}
+
 .phn {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .email {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 0.3rem;
 }
 
 .cta-btn:hover {
@@ -196,13 +111,78 @@ ul li ul li {
 
 .icon {
   position: relative;
+  background-color: transparent;
   padding: 0 0.5rem 0 0;
 }
 
+.nav-bar {
+  position: absolute;
+  right: 3.125rem;
+  top: 3.7rem;
+}
+
+.nav__links {
+  float: right;
+}
+
+.nav--link {
+  color: white;
+}
+
+.nav--link:hover {
+  color: #dfd3c3;
+}
+
+.nav--item {
+  display: inline;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 5px;
+}
+
 .dropdown {
-  margin: auto;
-  width: 100px;
-  padding-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main);
+  min-width: min-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content {
+  padding: 0.5rem;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: var(--main);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mobile-show {
+  display: none;
 }
 
 /**************************** Title image *************************************/
@@ -572,123 +552,6 @@ em {
     background-attachment: scroll;
   }
 
-  #menuToggle {
-    display: block;
-    position: absolute;
-    top: 44px;
-    right: 3%;
-    z-index: 5;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 5;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-
-  /*
-   * Just a quick hamburger
-   */
-  #menuToggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #edf0f1;
-    border-radius: 5px;
-    z-index: 5;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  /*
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(0px, 0px);
-    background: #edf0f1;
-  }
-
-  /*
-   * But let's hide the middle one.
-   */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0px, 0px);
-  }
-
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  #menu {
-    overflow-x: hidden;
-    position: absolute;
-    width: 100vw;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    right: -30px;
-    background: #ededed;
-    background-color: #596e79;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-
-  #menu li {
-    text-align: left;
-    padding: 10px 10%;
-    font-size: 22px;
-  }
-
-  #menu li:hover {
-    background-color: #65818f;
-    color: white;
-  }
-
-  /*
-   * And let's fade it in from the left
-   */
-  #menuToggle input:checked ~ ul {
-    transform: none;
-    opacity: 1;
-  }
-
   .banner__tint {
     opacity: 90%;
   }
@@ -728,28 +591,9 @@ em {
     font-size: 16px;
   }
 
-  #menuToggle {
-    position: relative;
-    top: 2px;
-    margin-right: 5%;
-  }
-
   header {
     background-color: #c3b49c;
     height: 100px;
-  }
-
-  .logo {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .logo-container {
-    margin-top: 10px;
-    margin-bottom: 0px;
   }
 
   .container-wide {
@@ -789,5 +633,83 @@ em {
 
   .featurette-img {
     height: 250px;
+  }
+}
+
+/* New media querys */
+
+@media only screen and (max-width: 84rem) {
+  .mobile-show {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .lg-screen {
+    visibility: hidden;
+    display: none;
+  }
+  .nav--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: #596e79;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav--link {
+    background-color: var(--secondary);
+    color: white;
+  }
+
+  .nav--menu.active {
+    left: 0;
+  }
+
+  .nav--item {
+    background-color: var(--secondary);
+    margin: 1.7rem 0;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 33rem) {
+  .logo {
+    height: 100%;
+    max-width: 70vw;
+    width: 100%;
+  }
+  .hamburger {
+    top: 1.7rem;
   }
 }
