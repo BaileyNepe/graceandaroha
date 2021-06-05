@@ -2,6 +2,7 @@
   --main: #c3b49c;
   --secondary: #596e79;
   --main-hover: #d8cdbd;
+  --title: #c68a94;
 }
 
 @font-face {
@@ -19,33 +20,28 @@
 
 li,
 a {
-  font-weight: 400;
-  font-size: 16px;
   color: white;
   text-decoration: none;
 }
 
-h1 {
-  font-size: 80px;
-  color: #c68a94;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title);
   font-family: "casadona", cursive;
 }
+
+h1 {
+  font-size: 5rem;
+}
+
 h2 {
-  font-size: 60px;
-  color: #c68a94;
-  font-family: "casadona", cursive, "Montserrat", sans-serif;
+  font-size: 3.75rem;
 }
 
 h3 {
-  font-size: 50px;
-  color: #c68a94;
-  font-family: "casadona", cursive, "Montserrat", sans-serif;
-}
-
-h4 {
-  font-size: 30px;
-  color: #c68a94;
-  font-family: cursive, "Montserrat", sans-serif;
+  font-size: 3.125rem;
 }
 
 h6 {
@@ -54,19 +50,24 @@ h6 {
   color: #596e79;
 }
 
-p {
+p,
+em {
   color: #596e79;
+}
+
+.section-margin {
+  margin: 3.5rem auto;
+}
+
+.inner-section-margin {
+  margin-bottom: 2rem;
 }
 
 /*********************************** Header **********************************/
 
 .navbar-fixed-top.scrolled {
-  background-color: #c3b49c !important;
+  background-color: var(--main);
   transition: background-color 100ms linear;
-}
-
-.navbar-static {
-  background-color: #c3b49c;
 }
 
 .logo {
@@ -106,7 +107,7 @@ p {
 }
 
 .cta-btn:hover {
-  background: #d8cdbd;
+  background: var(--main-hover);
   color: white;
 }
 
@@ -194,25 +195,15 @@ p {
 }
 
 .banner-slide {
-  height: 800px;
+  height: 50rem;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  text-align: left;
-  margin: auto;
-  padding: 0;
-  margin-top: 0;
 }
 
 .banner-slide-subpages {
-  height: 500px;
+  height: 31.25rem;
   background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-attachment: none;
   background-size: cover;
-  margin: auto;
-  padding: 0;
 }
 
 .banner-our-story {
@@ -220,35 +211,27 @@ p {
 }
 
 .container-wide {
-  z-index: 2;
   margin-left: 5%;
-  padding: 20px;
-  width: 520px;
+  padding: 1.25rem;
+  width: 30rem;
 }
 
 .banner-slide__content {
+  top: 15rem;
   position: relative;
   z-index: 2;
-  top: 240px;
-}
-
-.title-heading {
-  margin: 5%;
 }
 
 .title-paragraph {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #edf0f1;
-  margin: 5%;
 }
 
 .banner-btn {
   background-color: #c68a94;
   color: #edf0f1;
   border: none;
-  margin: 5%;
-  font-family: Montserrat;
 }
 
 .banner-btn:hover {
@@ -264,9 +247,7 @@ p {
   overflow: auto;
   top: 0px;
   left: 0px;
-  /* opacity: 50%; */
   background: rgba(0, 0, 0, 0.7);
-  /*can be anything, of course*/
 }
 
 .banner__tint-sub {
@@ -279,44 +260,12 @@ p {
   left: 0px;
   opacity: 50%;
   background: rgba(0, 0, 0, 0.7);
-  /*can be anything, of course*/
 }
 
 /*********************************** Primary Written content ***********************************/
-.primary-cell {
-  background-color: white;
-  height: auto;
-  width: auto;
-}
 
 .primary-content {
-  height: auto;
   text-align: center;
-  margin-bottom: 50px;
-}
-
-.primary-content-a {
-  height: auto;
-  text-align: center;
-}
-
-.secondary-content {
-  height: auto;
-  text-align: left;
-}
-
-.page-header {
-  padding-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.spacing {
-  margin-top: 3%;
-}
-
-.text {
-  color: #596e79;
 }
 
 .banner-button-secondary {
@@ -329,13 +278,8 @@ p {
   background-color: #c68a94;
 }
 
-.spacing-bottom {
-  margin-bottom: 100px;
-}
-
 /**************************** Grid-links ************************************/
 .positioning {
-  position: relative;
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -345,37 +289,30 @@ p {
 }
 
 .backgrounds {
-  display: relative;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .content {
   text-align: center;
   position: relative;
-  padding: 0;
 }
 
 .image-scale {
-  height: 350px;
+  height: 21.875rem;
   width: 100%;
   background-position: 50% 50%;
   background-size: cover;
-  /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
-  margin: 0px;
   filter: brightness(70%) grayscale(50%);
 }
 
 .on-top {
-  z-index: 2;
+  z-index: 1;
   font-weight: bold;
   position: absolute;
   color: white;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 3rem;
   top: 50%;
   left: 50%;
@@ -384,42 +321,27 @@ p {
 
 .tint:hover .on-top {
   color: white;
-  font-size: 66px;
+  font-size: 4.125rem;
   text-shadow: none;
 }
 
 /**************************** Testimonials ************************************/
 .testimonials {
-  position: relative;
-  min-height: 450px;
-  height: auto;
-  height: auto;
-  padding: top 50px;
-  padding-bottom: 50px;
   text-align: center;
 }
 
-.h1 {
-  padding-top: 100px;
-}
-
 .carousel-item {
-  padding: 50px 20%;
-  height: auto;
-}
-
-em {
-  color: #596e79;
+  padding: 3.125rem 20%;
 }
 
 .carousel-fixings {
-  color: #c68a94;
+  color: var(--title);
   opacity: 100;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .carousel-fixings:focus {
-  color: #c68a94;
+  color: var(--title);
 }
 
 .carousel-fixings:hover {
@@ -428,47 +350,38 @@ em {
 
 /**************************** More information ************************************/
 .heading-section {
-  padding: 20px;
-  font-size: 40px;
+  margin: 1.25rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat";
 }
 
 .padding {
-  padding: 50px 0 100px;
+  padding: 1.6rem 0 3.125rem;
   background-color: #f0ece3;
+  text-align: center;
 }
 
 .margining {
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-right: 50px;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  display: block;
+  padding: 3.125rem 3.125rem 0 3.125rem;
 }
 
 /**************************** Footer ************************************/
 .footer {
-  height: 100px;
+  height: 6.25rem;
   background-color: #596e79;
 }
 
+.footer ul,
+.footer a {
+  margin: 0 5%;
+  white-space: nowrap;
+}
+
 .fa-facebook {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-#container {
-  margin-left: 6%;
-  margin-right: 6%;
-  max-width: 100%;
-}
-
-.nav-item a {
-  font-size: 1rem;
-  padding-left: 1rem;
-}
-
-.nav-item a:hover {
+.nav .nav--item a:hover {
   color: #d3d3d3;
 }
 
