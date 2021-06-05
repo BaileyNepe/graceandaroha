@@ -587,7 +587,7 @@ em {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 1;
+    z-index: 6;
   }
 
   .nav--link {
@@ -605,7 +605,7 @@ em {
   }
 
   .hamburger {
-    z-index: 2;
+    z-index: 7;
     background-color: transparent;
     position: absolute;
     top: 2.5rem;
