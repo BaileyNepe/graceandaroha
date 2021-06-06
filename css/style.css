@@ -302,10 +302,12 @@ em {
 }
 
 .image-scale {
-  height: 21.875rem;
+  /* height: 21.875rem; */
+  height: 25rem;
   width: 100%;
   background-position: 50% 50%;
-  background-size: cover;
+  /* background-size: cover; */
+  object-fit: cover;
   background-position: center center;
   background-repeat: no-repeat;
   filter: brightness(70%) grayscale(50%);
@@ -328,6 +330,12 @@ em {
   font-size: 4.125rem;
   text-shadow: none;
 }
+
+/* @media only screen and (max-width: 125rem) {
+  .image-scale {
+    height: 25rem;
+  }
+} */
 
 /**************************** Testimonials ************************************/
 .testimonials {
@@ -493,7 +501,7 @@ em {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 569px) {
   h1 {
     font-size: 50px;
   }
@@ -555,6 +563,20 @@ em {
 
   .featurette-img {
     height: 250px;
+  }
+
+  .primary-content {
+    text-align: left;
+  }
+  .banner-button-secondary {
+    margin: 3rem auto;
+    display: block;
+  }
+
+  .nav .nav--item {
+    font-size: 0.7rem;
+    padding: 0;
+    padding: 0.3rem;
   }
 }
 
