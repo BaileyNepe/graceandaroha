@@ -466,6 +466,24 @@ em {
   padding-top: 100px;
 }
 
+/* Enquiry */
+.iframe-container {
+  overflow: hidden;
+  padding-top: 70%;
+  position: relative;
+  height: 100vh;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: min-content;
+}
+
 /* Screen Sizing */
 
 @media (min-width: 1300px) {
