@@ -58,7 +58,7 @@
       <div class="banner-slide" style="background-image: url( images/beach-walking.jpg );">
         <div class="container-wide">
           <div class="banner-slide__content">
-            <h1 class="title-heading">Aroha mai, aroha atu</h1>
+            <h1 class="main-title">Aroha mai, aroha atu</h1>
             <p class="title-paragraph inner-section-margin">With Grace & Aroha, children and their families are cared for through loving, caring, respectful
               relationships, in order to feel happy, safe and to be able to grow and learn together.</p>
             <a href="contact" class="btn btn-secondary banner-btn">Get in touch</a>
@@ -179,6 +179,32 @@
       </div>
     </div>
   </section>
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "103467138010336");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v11.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!-- Footer -->
   <footer>
     <div class="navbar footer">
