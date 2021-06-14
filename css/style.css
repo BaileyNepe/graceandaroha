@@ -266,6 +266,10 @@ em {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.title-heading {
+  text-align: center;
+}
+
 /*********************************** Primary Written content ***********************************/
 
 .primary-content {
@@ -549,7 +553,6 @@ em {
     margin: 1.5rem auto;
   }
 
-  .title-heading,
   .main-title {
     text-align: center;
   }
@@ -577,11 +580,6 @@ em {
 
   .carousel-fixings {
     font-size: 1.5rem;
-  }
-
-  .spacing {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .featurette-img {

@@ -1,8 +1,3 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-#team {
-  background: !important;
-}
-
 .btn-plus:hover,
 .btn-plus:focus {
   color: pink;
@@ -12,11 +7,6 @@
 
 .btn-plus {
   color: #c68a94;
-}
-
-section .section-title {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 #team .card {
@@ -53,7 +43,7 @@ section .section-title {
   transition: 1s;
   transform-style: preserve-3d;
   position: relative;
-  margin: 30px;
+  margin: 10px;
 }
 
 .frontside {
@@ -61,7 +51,7 @@ section .section-title {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   z-index: 2;
-  margin: 30px 20px 100px;
+  margin: 1.875rem 1.25rem 6.25rem;
 }
 
 .backside {
@@ -99,58 +89,42 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-  min-height: 312px;
+  min-height: min-content;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-  color: #c68a94 !important;
-  font-family: "casadona", "hello-sarrah", Indie flower, cursive;
+  color: #c68a94;
+  font-family: "casadona", cursive;
+  font-size: 2rem;
 }
 
 .frontside .card .card-body img {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 50%;
-}
-
-.section-title {
-  padding-top: 50px;
-}
-
-.margin-bottom {
-  margin-bottom: 80px;
+  object-fit: cover;
 }
 
 /* Our Centers */
 
 .carousel-text {
-  font-family: Montserrat;
-  style: bolder;
   color: white;
-  font-family: Montserrat;
   opacity: 150%;
 }
 
 .carousel-caption {
-  width: 400px;
+  width: 25rem;
   background-color: rgba(0, 0, 0, 0.5);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .carousel-item {
-  max-height: 600px;
-}
-
-.padding-top-bottom {
-  padding: 50px 0;
+  max-height: 37.5rem;
 }
 
 .img-cnt {
   background-position: 50% 60%;
-  background-repeat: no-repeat;
-  background-attachment: none;
   background-size: cover;
-  margin: auto;
 }
