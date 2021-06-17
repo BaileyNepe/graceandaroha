@@ -9,6 +9,9 @@
   align-items: center;
   justify-content: center;
 }
+.no {
+  color: var(--secondary);
+}
 
 .form {
   width: 100%;
