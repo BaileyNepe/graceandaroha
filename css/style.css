@@ -336,12 +336,6 @@ em {
   text-shadow: none;
 }
 
-/* @media only screen and (max-width: 125rem) {
-  .image-scale {
-    height: 25rem;
-  }
-} */
-
 /**************************** Testimonials ************************************/
 .testimonials {
   text-align: center;
@@ -363,6 +357,10 @@ em {
 
 .carousel-fixings:hover {
   color: #ebccd2;
+}
+
+.img-size__caro {
+  max-height: 50vh;
 }
 
 /**************************** More information ************************************/
