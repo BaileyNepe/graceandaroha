@@ -921,3 +921,7 @@ em {
 .enrol h1 {
   margin-top: 1.5rem;
 }
+
+.extra-margin__btm {
+  margin-bottom: 7rem;
+}
