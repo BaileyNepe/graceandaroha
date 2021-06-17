@@ -388,7 +388,7 @@ em {
 
 /**************************** Footer ************************************/
 .footer {
-  height: 6.25rem;
+  min-height: 6.25rem;
   background-color: #596e79;
 }
 
@@ -542,12 +542,28 @@ em {
     height: 34.375rem;
   }
 
+  .fixed {
+    position: fixed;
+  }
+
   .section-margin {
     margin: 1.5rem auto;
   }
 
+  .container p {
+    margin-left: 0.7rem;
+  }
+
   .main-title {
     text-align: center;
+  }
+
+  .title-heading {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 
   .btn {
@@ -588,10 +604,19 @@ em {
     display: block;
   }
 
-  .nav .nav--item {
-    font-size: 0.7rem;
-    padding: 0;
-    padding: 0.3rem;
+  .footer,
+  .nav,
+  .nav--item {
+    display: block;
+    text-align: center;
+  }
+
+  .footer {
+    padding-bottom: 2rem;
+  }
+
+  .fa-facebook {
+    font-size: 2rem;
   }
 
   .logo {
@@ -601,6 +626,9 @@ em {
   }
   .hamburger {
     top: 1.6rem;
+  }
+  .jay {
+    margin-bottom: 10rem;
   }
 }
 
@@ -693,7 +721,7 @@ em {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   background-color: #c3b49c;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -879,10 +907,6 @@ em {
   background-color: rgba(0, 0, 0, 0.5);
   left: 50%;
   transform: translateX(-50%);
-}
-
-.carousel-item {
-  max-height: 37.5rem;
 }
 
 .img-cnt {
