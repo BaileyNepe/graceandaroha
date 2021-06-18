@@ -212,7 +212,8 @@ em {
 }
 
 .banner-our-story {
-  background-position: 50% 32%;
+  background-position: 50% 10%;
+  object-fit: cover;
 }
 
 .container-wide {
