@@ -446,6 +446,12 @@ em {
 
 /* Screen Sizing */
 
+@media only screen and (min-width: 125rem) {
+  .banner-slide-subpages {
+    height: 600px;
+  }
+}
+
 @media (min-width: 81.25rem) {
   .banner__tint {
     opacity: 50%;
