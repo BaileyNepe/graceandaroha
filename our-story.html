@@ -99,21 +99,6 @@
               <p class="carousel-text">Covering Waikato wide</p>
             </div>
           </div>
-          <!-- <div class="carousel-item p-0">
-            <img class="d-block w-100" src="images/dirt.png" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="carousel-text">Activity Center</h3>
-              <p class="carousel-text">Some other information that is relevant</p>
-            </div>
-          </div>
-          <div class="carousel-item p-0">
-            <img class="d-block w-100" src="images/our-story.png" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="carousel-text">Children play area</h3>
-              <p class="carousel-text">This is a great place for all to explore</p>
-            </div>
-          </div> -->
-
           <!-- <button class="carousel-control-prev carousel-fixings" type="button" data-bs-target="#images-carousel" data-bs-slide="prev">&#10094;
         </button>
         <button class="carousel-control-next carousel-fixings" type="button" data-bs-target="#images-carousel" data-bs-slide="next">&#10095;
@@ -201,6 +186,27 @@
       <a href="https://www.facebook.com/jayfowles.co.nz"><i class="fab nav-item fa-facebook"></i></a>
     </div>
   </footer>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v11.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="101481051529638">
+  </div>
 
   <!-- JavaScript Libary -->
 
