@@ -13,7 +13,6 @@
   height: 100%;
   overflow: auto;
   background-color: black;
-  /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -115,4 +114,10 @@ img.hover-shadow {
 
 .top-margin {
   margin-top: 16px;
+}
+
+@media only screen and (min-width: 109rem) {
+  .hover-shadow {
+    height: 25rem;
+  }
 }
