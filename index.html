@@ -182,13 +182,13 @@
   <div id="fb-root"></div>
 
   <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="101481051529638">
   </div>
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
   <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "103467138010336");
-    chatbox.setAttribute("attribution", "biz_inbox");
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
@@ -202,8 +202,7 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+    }(document, 'script', 'facebook-jssdk'));</script>
   <!-- Footer -->
   <footer>
     <div class="navbar footer">
