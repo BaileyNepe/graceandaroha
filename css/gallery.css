@@ -88,10 +88,6 @@ img.demo {
   cursor: pointer;
   height: 300px;
   width: 100%;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   object-fit: cover;
 }
 
@@ -113,11 +109,28 @@ img.hover-shadow {
 }
 
 .top-margin {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 109rem) {
   .hover-shadow {
+    height: 22rem;
+  }
+}
+
+@media only screen and (min-width: 120rem) {
+  .hover-shadow {
     height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 130rem) {
+  .hover-shadow {
+    height: 27rem;
+  }
+  .margin-3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150rem;
   }
 }
