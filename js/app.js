@@ -43,7 +43,7 @@ function submitToAPI(e) {
   };
 
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("POST", "https://pa5v2ep5pe.execute-api.ap-southeast-2.amazonaws.com/prod/contact");
+  xmlhttp.open("POST", "https://formspree.io/f/moqywyvv");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
   xmlhttp.send(JSON.stringify(data));
   xmlhttp.onreadystatechange = function () {
