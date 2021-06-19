@@ -7,7 +7,7 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-<IfModule mod_expires.c>
+
   ExpiresActive on
 
 # Perhaps better to whitelist expires rules? Perhaps.
@@ -41,9 +41,8 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
   ExpiresByType text/css                  "access plus 1 year"
   ExpiresByType application/javascript    "access plus 1 year"
 
-</IfModule>
 
-<IfModule mod_deflate.c>
+
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE text/javascript
@@ -69,4 +68,3 @@ AddOutputFilterByType DEFLATE font/opentype
 BrowserMatch ^Mozilla/4 gzip-only-text/html
 BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-</IfModule>
