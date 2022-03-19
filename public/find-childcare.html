@@ -30,9 +30,30 @@
     gtag('config', 'G-FXCVLZ3W2T');
   </script>
   <style>
-    li {
+    .ul li {
       color: #596E79;
       padding: 0.5rem 0;
+    }
+
+    .ul {
+      list-style: none;
+      /* Remove default bullets */
+    }
+
+    .ul li::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #C68A94;
+      /* Change the color */
+      font-weight: bold;
+      font-size: 1.5rem;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1em;
+      /* Also needed for space (tweak if needed) */
+      margin-left: -1em;
+      /* Also needed for space (tweak if needed) */
     }
   </style>
 </head>
@@ -67,7 +88,7 @@
     </header>
   </div>
   <section class="banner">
-    <div class="banner-slide-subpages" style="background-image: url( images/rocks.jpg );">
+    <div class="banner-slide-subpages banner-our-story" style="background-image: url( images/rock-min.jpg );">
       <div class="container-wide">
       </div>
       <div class="banner__tint-sub"></div>
@@ -84,7 +105,7 @@
     <h2 class="h6">Questions to ask</h2>
     <p class="primary_content__padding">Asking the following questions on visits may be insightful, you should then always listen to your heart.
     </p>
-    <ul>
+    <ul class="ul">
 
       <li>What ratios of teacher/child to your provide?
       </li>
@@ -92,7 +113,7 @@
       </li>
       <li>What number of children is the room licensed for?
       </li>
-      <li>How long have the teachers been employed for (high staff turnover can be an indication of unsupported teachers)
+      <li>How long have the teachers been employed for? (high staff turnover can be an indication of unsupported teachers)
       </li>
       <li>Do you provide primary care/key teachers for infants and toddlers? (a special person that gets to know you and your child well so that they can anticipate and
         listen to the needs and wants of your child).
@@ -100,14 +121,6 @@
       <li>What do transition visits look like? (both for settling when first starting and then when they change rooms)
       </li>
     </ul>
-    <!-- <h2 class="h6">What you need to provide</h2>
-    <p class="primary_content__padding">Each day please bring a bag with two to three changes of clothes, a hat (suitable for the season), sunscreen, nappies, wipes, lunchbox with
-      morning tea, lunch and afternoon tea, formula/breastmilk, bottle, drink bottle,
-    </p>
-    <h2 class="h6">What age child can be enrolled?</h2>
-    <p class="primary_content__padding">We are licenced to take children from the age of birth up to six years of age.
-    </p>
-    <a href="express-your-interest" class="btn banner-button-secondary bottom">Express your interest</a> -->
   </section>
   <!-- <section class="padding">
     <div class="row g-0">
