@@ -1,0 +1,44 @@
+.card {
+  border: none;
+}
+
+.frontside .card {
+  min-height: min-content;
+}
+
+.card-title {
+  color: #c68a94;
+  font-family: casadona, cursive;
+  font-size: 2rem;
+}
+
+.img-fluid {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.guide {
+  padding: 3rem 0;
+  margin-top: 1rem;
+}
+
+.wrapper {
+  margin: 2rem auto;
+  display: grid;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 40rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 3rem;
+    align-items: center;
+  }
+}

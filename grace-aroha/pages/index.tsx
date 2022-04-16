@@ -4,9 +4,10 @@ import Head from 'next/head';
 import { StickyHeader } from '@/components/StickyHeader';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Container } from 'react-bootstrap';
 
 import { testimonials } from 'data/testimonials';
+import { Footer } from '@/components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -125,30 +126,34 @@ const Home: NextPage = () => {
           </a>
         </p> */}
       </section>
+
       <section className="padding">
-        <div className="row g-0">
-          <div className="col-lg-6 margining">
-            <Image className="bd-placeholder-img" width="140" height="140" src="/images/kaupapa.png" />
-            <h2 className="heading-section">Kaupapa</h2>
-            <p>Our role-modelling of love, care and respect with our children provides a strong, healthy foundation for them to build all other relationships throughout their life.</p>
-            <p>
-              <a className="btn banner-button-secondary centering" href="our-story">
-                View details &raquo;
-              </a>
-            </p>
+        <Container>
+          <div className="row g-0">
+            <div className="col-lg-6 margining">
+              <Image className="bd-placeholder-img" width="140" height="140" src="/images/kaupapa.png" />
+              <h2 className="heading-section">Kaupapa</h2>
+              <p>Our role-modelling of love, care and respect with our children provides a strong, healthy foundation for them to build all other relationships throughout their life.</p>
+              <p>
+                <a className="btn banner-button-secondary centering" href="our-story">
+                  View details &raquo;
+                </a>
+              </p>
+            </div>
+            <div className="col-lg-6 margining">
+              <Image className="bd-placeholder-img" width="140" height="140" src="/images/hands.png" />
+              <h2 className="heading-section">Whānau</h2>
+              <p>Whānau should be supported with care as they raise their children. The three underlying principles of our kaupapa are love, care and respect.</p>
+              <p>
+                <a className="btn banner-button-secondary centering" href="services">
+                  View details &raquo;
+                </a>
+              </p>
+            </div>
           </div>
-          <div className="col-lg-6 margining">
-            <Image className="bd-placeholder-img" width="140" height="140" src="/images/hands.png" />
-            <h2 className="heading-section">Whānau</h2>
-            <p>Whānau should be supported with care as they raise their children. The three underlying principles of our kaupapa are love, care and respect.</p>
-            <p>
-              <a className="btn banner-button-secondary centering" href="services">
-                View details &raquo;
-              </a>
-            </p>
-          </div>
-        </div>
+        </Container>
       </section>
+      <Footer />
     </>
   );
 };

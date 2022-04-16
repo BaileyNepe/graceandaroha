@@ -1,0 +1,46 @@
+.nav--item {
+  display: inline;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.nav--item a:hover {
+  color: #d3d3d3;
+}
+
+.footer {
+  background-color: #596e79;
+}
+
+.footer a,
+.footer ul {
+  padding-left: 0;
+  white-space: nowrap;
+}
+.fa-facebook {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 35.56rem) {
+  .footer,
+  .nav,
+  .nav--item {
+    display: block;
+    text-align: center;
+  }
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fa-facebook {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 35.56rem) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 1rem;
+  }
+}
