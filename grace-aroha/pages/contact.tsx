@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { API_MAIL } from '../config';
+import Layout from '@/components/Layout';
 
 const ContactPage: NextPage = () => {
   const [nameFocus, setNameFocus] = useState(false);
@@ -73,7 +74,7 @@ const ContactPage: NextPage = () => {
   };
 
   return (
-    <>
+    <Layout sticky={false}>
       <ToastContainer theme="colored" />
       <div className="container-ctc">
         <span className="big-circle"></span>
@@ -196,8 +197,7 @@ const ContactPage: NextPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 export default ContactPage;

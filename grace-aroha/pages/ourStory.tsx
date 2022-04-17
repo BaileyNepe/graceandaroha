@@ -1,15 +1,12 @@
-import { Footer } from '@/components/Footer';
-import { StickyHeader } from '@/components/StickyHeader';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { Container } from 'react-bootstrap';
 import styles from '@/styles/OurStory.module.css';
+import Layout from '@/components/Layout';
 
 const OurStoryPage: NextPage = () => {
   return (
-    <>
-      <StickyHeader />
-
+    <Layout>
       <section className="banner">
         <div className="banner-slide-subpages banner-find-childcare" style={{ backgroundImage: `url( 'images/rocks.jpg' )` }}>
           <div className="container-wide"></div>
@@ -50,8 +47,7 @@ const OurStoryPage: NextPage = () => {
           </div>
         </Container>
       </section>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

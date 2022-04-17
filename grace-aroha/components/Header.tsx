@@ -2,10 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaEnvelope, FaMobile } from 'react-icons/fa';
 
-import styles from '@/styles/StickyHeader.module.css';
+import styles from '@/styles/Header.module.css';
 import { useEffect, useState } from 'react';
 
-export const StickyHeader = () => {
+export interface Props {
+  stickyHeader?: boolean;
+}
+
+export const Header = ({ stickyHeader = true }: Props) => {
   const [scollStyles, setScrollStyles] = useState('');
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileMenuStyles, setMobileMenuStyles] = useState('');
@@ -20,8 +24,12 @@ export const StickyHeader = () => {
 
   /* Method that will fix header after a specific scrollable */
   const isSticky = () => {
-    const scrollTop = window.scrollY;
-    scrollTop >= 50 ? setScrollStyles(styles.scrolled) : setScrollStyles('');
+    if (stickyHeader) {
+      const scrollTop = window.scrollY;
+      scrollTop >= 50 ? setScrollStyles(styles.scrolled) : setScrollStyles('');
+    } else {
+      setScrollStyles('');
+    }
   };
 
   const toggleMobileMenu = () => {
@@ -34,8 +42,10 @@ export const StickyHeader = () => {
     }
   };
 
+  const headerType = stickyHeader ? styles['sticky-header'] : styles['navbar-static'];
+
   return (
-    <header className={`${styles['sticky-header']} ${scollStyles}`}>
+    <header className={`${headerType} ${scollStyles}`}>
       <Link href="/">
         <div className={styles.logo}>
           <Image src="/images/logo-trans.png" alt="Grace and Aroha Educare" layout="responsive" height={70} width={400} />
