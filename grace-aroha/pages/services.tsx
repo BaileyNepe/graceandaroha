@@ -7,7 +7,11 @@ import styles from '@/styles/Services.module.css';
 
 const ServicesPage: NextPage = () => {
   return (
-    <Layout>
+    <Layout
+      title="Services | Grace & Aroha"
+      description="Parenting is not a “one size fits all” approach and for this reason we believe that spending time with you in your home or mine, supporting you to see your child through a different lens, creating healthy habits, and giving you emotional
+    support face to face is how we serve you. Getting to know you and your child is how solutions can be found to the challenges often faced."
+    >
       <section className="banner">
         <div className="banner-slide-subpages" style={{ backgroundImage: `url( '/images/abd.jpg' )` }}>
           <div className="container-wide"></div>

@@ -6,7 +6,12 @@ import Layout from '@/components/Layout';
 
 const OurStoryPage: NextPage = () => {
   return (
-    <Layout>
+    <Layout
+      title={'Our Story | Grace & Aroha'}
+      description={
+        'It is with grace and aroha that we should treat ourselves and others. This is no more true than when you become a parent. It’s one of the hardest jobs you’ll ever do. A mixture of emotions and a role not easily defined can often lead to exhaustion and a lack of confidence.'
+      }
+    >
       <section className="banner">
         <div className="banner-slide-subpages banner-find-childcare" style={{ backgroundImage: `url( 'images/rocks.jpg' )` }}>
           <div className="container-wide"></div>

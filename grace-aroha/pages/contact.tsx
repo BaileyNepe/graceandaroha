@@ -74,7 +74,7 @@ const ContactPage: NextPage = () => {
   };
 
   return (
-    <Layout sticky={false}>
+    <Layout sticky={false} title="Contact | Grace & Aroha">
       <ToastContainer theme="colored" />
       <div className="container-ctc">
         <span className="big-circle"></span>
