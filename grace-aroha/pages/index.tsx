@@ -66,10 +66,10 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className="col-md-6 backgrounds">
-            <a href="find-childcare" className="grid__block js-tilt">
+            <a href="blog" className="grid__block js-tilt">
               <div className="content tint">
                 <Image className="image-scale" src="/images/rock-min.jpg" layout="responsive" height={50} width={100} />
-                <h3 className="on-top">Find Childcare</h3>
+                <h3 className="on-top">Blog</h3>
               </div>
             </a>
           </div>

@@ -78,7 +78,11 @@ export const Header = ({ stickyHeader = true }: Props) => {
               <a className={styles['nav--link']}>Services</a>
             </Link>
           </li>
-
+          <li className={styles['nav--item']} onClick={toggleMobileMenu}>
+            <Link href="/blog">
+              <a className={styles['nav--link']}>Blog</a>
+            </Link>
+          </li>
           <li className={styles['nav--item']} onClick={toggleMobileMenu}>
             <Link href="/contact">
               <a className={styles['nav--link']}>Contact</a>
