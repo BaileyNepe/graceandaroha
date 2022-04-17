@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
+import '@/styles/Contact.css';
 
 import type { AppProps } from 'next/app';
 
