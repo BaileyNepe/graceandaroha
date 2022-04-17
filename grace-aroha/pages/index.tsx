@@ -50,7 +50,7 @@ const Home: NextPage = () => {
       <section className="positioning section-margin">
         <div className="row g-0">
           <div className="col-md-6 backgrounds">
-            <a href="our-story" className="grid__block js-tilt">
+            <a href="ourStory" className="grid__block js-tilt">
               <div className="content tint">
                 <Image className="image-scale" src="/images/rocks-min.jpg" layout="responsive" height={50} width={100} />
                 <h3 className="on-top">Our Story</h3>
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
               <h2 className="heading-section">Kaupapa</h2>
               <p>Our role-modelling of love, care and respect with our children provides a strong, healthy foundation for them to build all other relationships throughout their life.</p>
               <p>
-                <a className="btn banner-button-secondary centering" href="our-story">
+                <a className="btn banner-button-secondary centering" href="ourStory">
                   View details &raquo;
                 </a>
               </p>
