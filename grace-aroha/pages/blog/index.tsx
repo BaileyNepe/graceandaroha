@@ -12,7 +12,7 @@ interface Props {
         name: string;
         slug: string;
         description: string;
-        image: string;
+        image: { data: { attributes: { url: string } } };
       };
     }
   ];

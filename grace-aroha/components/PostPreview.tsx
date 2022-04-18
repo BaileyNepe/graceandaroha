@@ -3,7 +3,14 @@ import Link from 'next/link';
 import styles from '@/styles/PostPreview.module.css';
 import { Card } from 'react-bootstrap';
 
-const PostPreview = ({ post }) => {
+interface Props {
+  post: {
+    id: string;
+    attributes: { name: string; slug: string; description: string; image: { data: { attributes: { url: string } } } };
+  };
+}
+
+const PostPreview = ({ post }: Props) => {
   return (
     <Card className={styles.card}>
       <Link href={`/blog/${post.id}`}>
