@@ -36,3 +36,21 @@
 .text h4 {
   font-size: 1.5rem;
 }
+
+.text ul {
+  list-style: none;
+}
+
+.text ul li {
+  color: var(--secondary);
+}
+
+.text ul li::before {
+  content: '\2022';
+  color: #c68a94;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
