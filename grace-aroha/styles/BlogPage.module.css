@@ -1,4 +1,17 @@
 .header {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0 4rem;
+}
+
+@media only screen and (min-width: 62rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
 }

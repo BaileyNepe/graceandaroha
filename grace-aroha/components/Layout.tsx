@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '@/styles/Layout.module.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { useRouter } from 'next/router';
 
 export interface Props {
   title?: string;
@@ -9,9 +10,11 @@ export interface Props {
   description?: string;
   sticky?: boolean;
   children: JSX.Element[] | JSX.Element;
+  image?: string;
 }
 
-const Layout = ({ title, keywords, description, sticky = true, children }: Props) => {
+const Layout = ({ title, keywords, description, sticky = true, children, image }: Props) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -21,8 +24,8 @@ const Layout = ({ title, keywords, description, sticky = true, children }: Props
         <meta name="keywords" content={keywords} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://graceandaroha.co.nz/images/beach-walking.jpg" />
-        <meta property="og:url" content="https://graceandaroha.co.nz" />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={`https://graceandaroha.co.nz${router.pathname}`} />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <div className={styles.layout}>
@@ -38,6 +41,7 @@ Layout.defaultProps = {
   title: 'Grace & Aroha',
   description: 'With Grace & Aroha, children and their families are cared for through loving, caring, respectful relationships, in order to feel happy, safe and to be able to grow and learn together.',
   keywords: 'postpartum, new mum, childcare, Grace and Aroha Educare,Grace and Aroha,Grace & Aroha,Homebased,Childcare,education,daycare,whanau,love,family,home-based,ECE,daycare,best childcare',
+  image: 'https://graceandaroha.co.nz/images/beach-walking.jpg',
 };
 
 export default Layout;

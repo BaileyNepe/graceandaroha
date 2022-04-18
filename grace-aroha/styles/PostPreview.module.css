@@ -1,0 +1,26 @@
+.link:hover {
+  cursor: pointer;
+}
+
+.img {
+  margin: 0 0 1rem;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+.title:hover {
+  color: #965560;
+}
+
+.link {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.card {
+  border: none;
+}
