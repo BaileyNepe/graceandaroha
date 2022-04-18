@@ -7,7 +7,7 @@ type Data = {
 };
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  const evt = events.filter((ev) => ev.slug === req.query.slug);
+  const evt = events.filter((ev: any) => ev.slug === req.query.slug);
 
   if (req.method === 'GET') {
     res.status(200).json(evt);
