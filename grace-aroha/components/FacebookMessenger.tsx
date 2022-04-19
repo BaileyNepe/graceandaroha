@@ -2,7 +2,7 @@ import Script from 'next/script';
 
 export const FacebookMessenger = () => {
   return (
-    <>
+    <div>
       <div id="fb-root"></div>
       <div id="fb-customer-chat" className="fb-customerchat"></div>
       <Script strategy="lazyOnload">
@@ -25,6 +25,6 @@ export const FacebookMessenger = () => {
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'))`}
       </Script>
-    </>
+    </div>
   );
 };
