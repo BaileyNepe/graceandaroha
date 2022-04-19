@@ -7,7 +7,7 @@ export const services: { title: string; description?: [string]; cost: string; li
   {
     title: 'The whole package - Sleep support',
     link: {
-      link: 'https://graceandaroha.s3.ap-southeast-2.amazonaws.com/The-whole-package-compressed.pdf',
+      link: 'https://graceandaroha.s3.ap-southeast-2.amazonaws.com/The+whole+package-compressed.pdf',
       text: 'Please click this link for further information about this package.',
     },
     cost: '$600',
@@ -24,7 +24,7 @@ export const services: { title: string; description?: [string]; cost: string; li
     ],
     cost: '$600',
     link: {
-      link: 'https://graceandaroha.s3.ap-southeast-2.amazonaws.com/Mama-and-pe%CC%84pi+-compressed.pdf',
+      link: 'https://graceandaroha.s3.ap-southeast-2.amazonaws.com/Mama+and+pe%CC%84pi+-compressed.pdf',
       text: 'Click for further details',
     },
   },

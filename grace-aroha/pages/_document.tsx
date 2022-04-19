@@ -1,4 +1,3 @@
-import { FacebookMessenger } from '@/components/FacebookMessenger';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { GA_TRACKING_ID } from '@/config/index';
 
@@ -33,7 +32,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <FacebookMessenger />
         </body>
       </Html>
     );

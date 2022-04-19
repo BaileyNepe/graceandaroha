@@ -6,15 +6,16 @@ export const FacebookMessenger = () => {
     <>
       <div id="fb-root"></div>
       <div id="fb-customer-chat" className="fb-customerchat"></div>
-      <Script type="application/javascript" strategy="lazyOnload">
+      <Script strategy="lazyOnload">
         {`
         var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", \`${FB_PAGE_ID}\`);
+        chatbox.setAttribute("page_id", "101481051529638");
         chatbox.setAttribute("attribution", "biz_inbox");
+
         window.fbAsyncInit = function () {
         FB.init({
           xfbml: true,
-          version: 'v12.0'
+          version: 'v13.0'
         });
       };
       (function (d, s, id) {
