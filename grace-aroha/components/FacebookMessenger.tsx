@@ -1,5 +1,4 @@
 import Script from 'next/script';
-import { FB_PAGE_ID } from '../config';
 
 export const FacebookMessenger = () => {
   return (
