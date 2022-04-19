@@ -6,6 +6,7 @@ import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import * as gtag from '../lib/gtag';
 import { useRouter } from 'next/router';
+import { FacebookMessenger } from '@/components/FacebookMessenger';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -20,7 +21,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <FacebookMessenger />
+    </>
+  );
 };
 
 export default MyApp;

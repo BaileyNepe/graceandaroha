@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { GA_TRACKING_ID } from '@/config/index';
-import { FacebookMessenger } from '@/components/FacebookMessenger';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -33,7 +32,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <FacebookMessenger />
         </body>
       </Html>
     );
