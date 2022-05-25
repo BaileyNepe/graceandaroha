@@ -98,7 +98,7 @@ const ContactPage: NextPage = () => {
             <div className="social-media">
               <p>Connect with us :</p>
               <div className="social-icons">
-                <a href="https://www.facebook.com/jayfowles.co.nz">
+                <a href="https://www.facebook.com/graceandaroha">
                   <FaFacebookF />
                 </a>
               </div>

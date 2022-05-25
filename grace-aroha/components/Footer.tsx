@@ -18,7 +18,7 @@ export const Footer = () => {
             <a href="/contact">Contact</a>
           </li>
         </ul>
-        <a href="https://www.facebook.com/jayfowles.co.nz">
+        <a href="https://www.facebook.com/graceandaroha">
           <FaFacebook className={styles['fa-facebook']} />
         </a>
       </div>
