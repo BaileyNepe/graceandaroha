@@ -1,13 +1,12 @@
 import type { NextPage } from 'next';
 
-import { Footer } from '@/components/Footer';
 import { useEffect, useState } from 'react';
-import { FaFacebookF } from 'react-icons/fa';
-import { ToastContainer, toast } from 'react-toastify';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
 
+import Layout from '@/components/Layout';
 import 'react-toastify/dist/ReactToastify.css';
 import { API_MAIL } from '../config';
-import Layout from '@/components/Layout';
 
 const ContactPage: NextPage = () => {
   const [nameFocus, setNameFocus] = useState(false);
@@ -100,6 +99,9 @@ const ContactPage: NextPage = () => {
               <div className="social-icons">
                 <a href="https://www.facebook.com/graceandaroha">
                   <FaFacebookF />
+                </a>
+                <a href="https://www.instagram.com/graceandaroha">
+                  <FaInstagram />
                 </a>
               </div>
             </div>

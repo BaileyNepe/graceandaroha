@@ -1,4 +1,4 @@
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 import styles from '@/styles/Footer.module.css';
 
@@ -18,9 +18,14 @@ export const Footer = () => {
             <a href="/contact">Contact</a>
           </li>
         </ul>
-        <a href="https://www.facebook.com/graceandaroha">
-          <FaFacebook className={styles['fa-facebook']} />
-        </a>
+        <div>
+          <a href="https://www.instagram.com/graceandaroha">
+            <FaInstagram className={styles['fa-facebook']} />
+          </a>
+          <a href="https://www.facebook.com/graceandaroha">
+            <FaFacebook className={styles['fa-facebook']} />
+          </a>
+        </div>
       </div>
     </footer>
   );
