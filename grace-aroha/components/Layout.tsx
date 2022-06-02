@@ -15,7 +15,6 @@ export interface Props {
 
 const Layout = ({ title, keywords, description, sticky = true, children, image }: Props) => {
   const router = useRouter();
-  console.log(router);
   return (
     <>
       <Head>
