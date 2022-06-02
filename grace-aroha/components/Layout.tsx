@@ -1,8 +1,8 @@
-import Head from 'next/head';
 import styles from '@/styles/Layout.module.css';
-import { Header } from './Header';
-import { Footer } from './Footer';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { Footer } from './Footer';
+import { Header } from './Header';
 
 export interface Props {
   title?: string;
@@ -15,6 +15,7 @@ export interface Props {
 
 const Layout = ({ title, keywords, description, sticky = true, children, image }: Props) => {
   const router = useRouter();
+  console.log(router);
   return (
     <>
       <Head>
@@ -25,7 +26,7 @@ const Layout = ({ title, keywords, description, sticky = true, children, image }
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="og:url" content={`https://graceandaroha.co.nz${router.pathname}`} />
+        <meta property="og:url" content={`https://graceandaroha.co.nz${router.asPath}`} />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <div className={styles.layout}>

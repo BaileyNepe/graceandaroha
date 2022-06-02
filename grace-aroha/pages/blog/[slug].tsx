@@ -1,13 +1,13 @@
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import ReactMarkdown from 'react-markdown';
 import { ParsedUrlQuery } from 'querystring';
+import ReactMarkdown from 'react-markdown';
 
 import styles from '@/styles/Post.module.css';
 import Image from 'next/image';
-import { Container } from 'react-bootstrap';
 import Link from 'next/link';
+import { Container } from 'react-bootstrap';
 import { BsArrowLeft } from 'react-icons/bs';
 
 interface Props {
