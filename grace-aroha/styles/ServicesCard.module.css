@@ -5,11 +5,8 @@
   padding: 1rem 1rem 0;
 }
 
-.link {
+.description a {
   text-align: center;
-}
-
-.pdf {
   color: #596e79;
   transition: 200ms all ease-in;
   text-decoration: underline;

@@ -1,8 +1,8 @@
 import Layout from '@/components/Layout';
+import PostPreview from '@/components/PostPreview';
 import { API_URL } from '@/config/index';
 import styles from '@/styles/BlogPage.module.css';
 import { Container } from 'react-bootstrap';
-import PostPreview from '@/components/PostPreview';
 
 interface Props {
   posts: [
@@ -12,7 +12,8 @@ interface Props {
         name: string;
         slug: string;
         description: string;
-        image: { data: { attributes: { url: string } } };
+        image: { data?: { attributes: { url: string } } };
+        publishedAt: string;
       };
     }
   ];
@@ -29,7 +30,7 @@ const BlogPage = ({ posts }: Props) => {
       </section>
       <Container>
         <h1 className={styles.header}>Blog</h1>
-        <div className={styles.grid}>{posts.length > 0 ? posts.map((post, index) => <PostPreview key={index} post={post} />) : <p>No posts...</p>}</div>
+        <div className={styles.grid}>{posts?.length > 0 ? posts.sort((a, b) => (a.attributes.publishedAt > b.attributes.publishedAt ? -1 : 1)).map((post, index) => <PostPreview key={index} post={post} />) : <p>No posts...</p>}</div>
       </Container>
     </Layout>
   );

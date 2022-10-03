@@ -1,11 +1,23 @@
 import Layout from '@/components/Layout';
-import type { NextPage } from 'next';
-import { services } from 'data/services';
 import ServicesCard from '@/components/ServicesCard';
-
 import styles from '@/styles/Services.module.css';
+import { API_URL } from '../../config';
 
-const ServicesPage: NextPage = () => {
+interface Props {
+  services: [
+    {
+      id: string;
+      attributes: {
+        title: string;
+        description?: string;
+        price?: string;
+        featured?: boolean;
+      };
+    }
+  ];
+}
+
+const ServicesPage = ({ services }: Props) => {
   return (
     <Layout
       title="Services | Grace & Aroha"
@@ -41,7 +53,7 @@ const ServicesPage: NextPage = () => {
         <hr className="featurette-divider" />
         <div className={styles.grid}>
           {services?.map((service, index) => (
-            <ServicesCard key={index} service={service} />
+            <ServicesCard key={service.id} service={service.attributes} />
           ))}
         </div>
       </section>
@@ -50,3 +62,13 @@ const ServicesPage: NextPage = () => {
 };
 
 export default ServicesPage;
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${API_URL}/api/services?populate=*`);
+  const { data } = await res.json();
+  const services = data;
+  return {
+    props: { services },
+    revalidate: 1,
+  };
+};

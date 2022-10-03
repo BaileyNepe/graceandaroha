@@ -12,14 +12,14 @@ import { BsArrowLeft } from 'react-icons/bs';
 
 interface Props {
   postDetails: {
-    data: { id: string; attributes: { name: string; slug: string; date: string; description: string; image: { data: { attributes: { url: string } } } } };
+    data: { id: string; attributes: { name: string; slug: string; date: string; description: string; image?: { data: { attributes: { url?: string } } } } };
   };
 }
 
 const PostPage = ({ postDetails }: Props) => {
   const post = postDetails?.data?.attributes;
   return (
-    <Layout sticky={false} title={`${post.name} | Grace and Aroha`} description={post.description.slice(0, 150)} image={post?.image ? post.image.data.attributes.url : '/images/beach-walking.jpg'}>
+    <Layout sticky={false} title={`${post.name} | Grace and Aroha`} description={post.description.slice(0, 150)} image={post?.image ? post.image.data?.attributes?.url ?? '/images/beach-walking.jpg' : '/images/beach-walking.jpg'}>
       <Container className={styles.container}>
         <div className={styles['link-container']}>
           <Link href="/blog">
@@ -36,7 +36,7 @@ const PostPage = ({ postDetails }: Props) => {
             justifyContent: 'center',
           }}
         >
-          <Image src={post?.image ? post.image.data.attributes.url : '/images/beach-walking.jpg'} height={400} width={700} />
+          <Image src={post?.image?.data ? post?.image?.data?.attributes?.url ?? '/images/beach-walking.jpg' : '/images/beach-walking.jpg'} height={400} width={700} />
         </div>
         <h1 className={styles.title}>{post?.name}</h1>
         <ReactMarkdown className={styles.text} children={post?.description} />

@@ -1,33 +1,23 @@
-import { Card } from 'react-bootstrap';
 import styles from '@/styles/ServicesCard.module.css';
+import { Card } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown';
 
 export interface Props {
-  service: { title: string; description?: [string]; cost: string; link?: { link: string; text: string } };
+  service: { title: string; description?: string; price?: string };
 }
 
 const ServicesCard = ({ service }: Props) => {
-  const { title, description, cost, link } = service;
+  const { title = 'Not Found', description = 'Not Found', price = '$N/A' } = service;
   return (
     <Card className={styles.card}>
       <Card.Title className={styles.title}>{title}</Card.Title>
 
       <Card.Body className={styles.body}>
         <div className={styles['body-text']}>
-          {description?.map((text, index) => (
-            <Card.Text className={styles.description} key={index}>
-              {text}
-            </Card.Text>
-          ))}
-          {link && (
-            <Card.Text className={styles.link}>
-              <a href={link.link} target="_blank" className={styles.pdf}>
-                {link.text}
-              </a>
-            </Card.Text>
-          )}
+          <ReactMarkdown className={styles.description} children={description} />
         </div>
         <div>
-          <Card.Text className={styles.cost}>{cost}</Card.Text>
+          <Card.Text className={styles.cost}>{price}</Card.Text>
         </div>
       </Card.Body>
     </Card>
